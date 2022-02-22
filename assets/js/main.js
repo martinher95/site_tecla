@@ -265,5 +265,13 @@
       mirror: false
     })
   });
+  
+  // Whatsapp Message on Button Click
+  const button = document.getElementById("whats-button");
+  button.addEventListener("click", event => {
+    let whatstext = document.getElementById("whats-text").value;
+    
+    window.open("https://wa.me/+5547991316099/?text=" + whatstext)
+  });
 
 })()
